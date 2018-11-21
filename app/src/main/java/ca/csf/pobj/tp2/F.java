@@ -13,7 +13,7 @@ public final class F {
     public static int[] getArrayOfPower(int originalNumber, int powerUpTo) {
         int[] powerArray = new int[powerUpTo];
 
-        for (int i = 3; i >= 0; i--) {
+        for (int i = powerUpTo-1; i >= 0; i--) {
             powerArray[i] = getNumberAtPower(originalNumber, powerUpTo-i);
         }
 

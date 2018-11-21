@@ -9,8 +9,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.security.InvalidParameterException;
-
 public class MainActivity extends AppCompatActivity {
 
     private EditText inputEditText;
