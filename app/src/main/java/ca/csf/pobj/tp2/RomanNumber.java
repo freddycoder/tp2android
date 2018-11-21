@@ -11,8 +11,8 @@ public class RomanNumber {
     private int number;
 
     public RomanNumber(int number) {
-        if (number <= 0 && number >= 5000) {
-            throw new InvalidParameterException("The number must be greater or equal than 1 and lesser or equal than 4999");
+        if (number <= 0 || number >= 5000) {
+            throw new IllegalArgumentException("The number must be greater or equal than 1 and lesser or equal than 4999");
         }
 
         this.number = number;

@@ -1,0 +1,9 @@
+void testMethod() {
+	try {
+		maFunctionDexception();
+		fail();
+	}
+	catch (MonException e) {
+		assertTrue(true);
+	}
+}

@@ -2,6 +2,8 @@ package ca.csf.pobj.tp2test;
 
 import org.junit.Test;
 
+import java.security.InvalidParameterException;
+
 import ca.csf.pobj.tp2.RomanNumber;
 
 import static org.junit.Assert.*;
@@ -72,5 +74,25 @@ public class RomanNumberTest {
     public void numberMMMMCMXCIX() {
         RomanNumber r = new RomanNumber(4999);
         assertEquals("MMMMCMXCIX", r.toString());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void exception0() {
+        new RomanNumber(0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void exceptionMinus10() {
+        new RomanNumber(-10);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void exception5000() {
+        new RomanNumber(5000);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void exception5010() {
+        new RomanNumber(5010);
     }
 }
