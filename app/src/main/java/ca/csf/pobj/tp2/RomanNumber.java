@@ -1,5 +1,7 @@
 package ca.csf.pobj.tp2;
 
+//BEN_CORRECTION : Imports inutilisés.
+
 import java.security.InvalidParameterException;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -11,7 +13,7 @@ public class RomanNumber {
     private int number;
 
     public RomanNumber(int number) {
-        if (number <= 0 || number >= 5000) {
+        if (number <= 0 || number >= 5000) { //BEN_CORRECTION : Valeurs 0 et 5000 devrait être en constantes.
             throw new IllegalArgumentException("The number must be greater or equal than 1 and lesser or equal than 4999");
         }
 

@@ -1,5 +1,6 @@
 package ca.csf.pobj.tp2;
 
+//BEN_CORRECTION : Classe du nom de "F". Nom ambigu.
 public final class F {
 
     private F() {

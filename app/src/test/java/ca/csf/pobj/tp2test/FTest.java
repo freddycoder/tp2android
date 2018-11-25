@@ -8,6 +8,8 @@ import static org.junit.Assert.*;
 
 public class FTest {
 
+    //BEN_REVIEW : Nom des tests auraient pu être plus clairs.
+
     @Test
     public void test56p1() {
         assertEquals(6, F.getNumberAtPower(56, 1));

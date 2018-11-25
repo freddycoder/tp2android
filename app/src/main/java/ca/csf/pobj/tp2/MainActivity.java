@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean isValidInputNumber() {
         try {
             int x = Integer.parseInt(inputEditText.getText().toString());
-            if (x < 1 || x > 4999) {
+            if (x < 1 || x > 4999) { //BEN_CORRECTION : Valeurs 1 et 4999 devrait être en constantes.
                 return false;
             }
             return true;

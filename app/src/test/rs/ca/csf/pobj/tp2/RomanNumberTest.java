@@ -4,6 +4,8 @@ import junit.framework.TestCase;
 
 import org.junit.Test;
 
+//BEN_REVIEW : Ce fichier n'est pas a bon endroit. Il devrait être dans "test/java", et non pas "test/rs"
+
 public class RomanNumberTest extends TestCase {
 
     @Test
